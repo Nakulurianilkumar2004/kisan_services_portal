@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmer's Assistant</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f4f8fb;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 20px;
+            background: linear-gradient(90deg, #4caf50, #43a047);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            animation: color-blink 2s infinite;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        @keyframes color-blink {
+            0%, 50%, 100% {
+                color: #fff;
+            }
+            25%, 75% {
+                color: #ffeb3b; /* Yellow color */
+            }
+        }
+
+        .nav-links a:hover {
+            color: #000;
+            background: #fff;
+        }
+
+        .section {
+            margin: 100px 20px 20px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .section h2 {
+            color: #4caf50;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .section img {
+            display: block;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            background: #4caf50;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #4caf50;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                width: 200px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                text-align: center;
+                padding: 10px 0;
+                font-size: 16px;
+            }
+
+            .menu-toggle {
+                display: block;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .logo img {
+                height: 40px;
+                width: 40px;
+            }
+
+            .logo span {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://img.freepik.com/premium-vector/national-farmers-day-with-indian-plowman-logo-banner-hindi-calligraphy-text_428817-883.jpg" alt="Farmer's Assistant Logo" />
+            <span>Farmer's Assistant</span>
+        </div>
+        <i class="uil uil-bars menu-toggle"></i>
+        <ul class="nav-links">
+            <li><a href="/soil_testing">Soil Testing</a></li>
+            <li><a href="/crop">Crop Recommendation</a></li>
+            <li><a href="/fertilizer">Fertilizer Recommendation</a></li>
+            <li><a href="/chat">Chatbot</a></li>
+            <li><a href="/organic_farming">Organic Farming</a></li>
+            <li><a href="/farmer_schemes">Farmers Scheme</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <div class="section">
+        <h2>Importance of Farming</h2>
+        <p>Farming is not just the backbone of our economy but also the essence of human survival...</p>
+        <img src="https://d17ocfn2f5o4rl.cloudfront.net/wp-content/uploads/2023/07/BP-AI-in-Agriculture-The-Future-of-Farming_body-im-3.jpg" alt="Modern Farming Practices">
+        <p>Farming is vital to human survival as it provides the food that sustains life...</p>
+    </div>
+
+    <div class="section">
+        <h2>History of Farming</h2>
+        <p>Farming has been a cornerstone of human civilization for thousands of years. It began during the Neolithic Revolution, approximately 10,000 years ago, when humans transitioned from a nomadic lifestyle of hunting and gathering to settled agriculture. Early farming practices included the cultivation of crops such as wheat, barley, and rice, and the domestication of animals like sheep and cattle.</p>
+        <p>Ancient civilizations, including Mesopotamia, Egypt, and the Indus Valley, developed advanced techniques such as irrigation and plowing, allowing for large-scale farming and surplus food production. These innovations laid the foundation for the growth of cities and the advancement of human societies.</p>
+        <p>Over time, traditional farming methods evolved with the introduction of crop rotation, the use of fertilizers, and mechanized tools during the Agricultural Revolution. Today, modern agriculture combines these traditional practices with cutting-edge technology to meet the needs of a growing global population.</p>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
